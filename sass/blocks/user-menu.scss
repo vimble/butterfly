@@ -1,0 +1,58 @@
+.user-menu {
+  padding-top: 55px;
+}
+
+.user-menu__burgerbtn {
+  float: left;
+  padding-top: 5px;
+}
+
+.user-menu__lang {
+  float: right;
+}
+
+.user-menu__toggle {
+  padding: 5px 10px;
+  padding-right: 7px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  background-color: transparent;
+  border: 0;
+  border: 1px solid #6c6c6c;
+  border-radius: 3px;
+  outline: 0;
+}
+
+.user-menu__caret {
+  width: 3px;
+  height: 3px;
+  margin-left: 1px;
+  background: url("../img/caret.png") no-repeat;
+  border: 0;
+}
+
+.user-menu__dropdown-menu {
+  min-width: 44px;
+  padding: 0;
+  margin: 0;
+  margin-top: -2px;
+  background-color: transparent;
+  border: 0;
+  border: 1px solid #6c6c6c;
+  border-top: 0;
+  border-radius: 3px;
+  outline: 0;
+}
+
+.user-menu__dropdown-menu>.user-menu__dropdown-item>.user-menu__dropdown-link {
+  padding: 5px 10px;
+  padding-right: 7px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+
+  &:hover {
+    background-color: #5d5d5d;
+  }
+}

@@ -1,0 +1,51 @@
+.slider__block {
+  position: relative;
+}
+
+.slider__text {
+  position: absolute;
+  top: 24.5%;
+  left: 0;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 115px;
+  background: linear-gradient(to right, #ffffff, transparent);
+}
+
+.slider__maintitle {
+  padding: 0;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  color: #3b3833;
+}
+
+.slider__subtitle {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #3d3a35;
+}
+
+.slider__btn {
+  position: absolute;
+  bottom: -30px;
+}
+
+.slider__control {
+  top: 36%;
+  left: 13px;
+  display: block;
+  width: 26px;
+  height: 57px;
+  padding: 0 20px;
+}
+
+.slider__control.left {
+  background: url("../img/left-arrow.png") no-repeat;
+}
+
+.slider__control.right {
+  background: url("../img/right-arrow.png") no-repeat;
+}
