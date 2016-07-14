@@ -2,15 +2,6 @@
   padding-top: 55px;
 }
 
-.user-menu__burgerbtn {
-  float: left;
-  padding-top: 5px;
-}
-
-.user-menu__burgerimg {
-  fill: white;
-}
-
 .user-menu__lang {
   float: right;
   padding-right: 15px;
@@ -41,13 +32,17 @@
   min-width: 44px;
   padding: 0;
   margin: 0;
-  margin-top: -2px;
+  margin-top: -4px;
   background-color: transparent;
   border: 0;
   border: 1px solid #6c6c6c;
   border-top: 0;
   border-radius: 3px;
   outline: 0;
+}
+
+.btn-group .dropdown-toggle:active, .btn-group.open .dropdown-toggle {
+  border-bottom: 0;
 }
 
 .user-menu__dropdown-menu>.user-menu__dropdown-item>.user-menu__dropdown-link {

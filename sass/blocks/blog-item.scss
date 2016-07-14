@@ -1,12 +1,6 @@
-.blog-item__img {
-  float: left;
-  width: 300px;
-  margin-right: 36px;
-}
+
 
 .blog-item__info {
-  float: left;
-  width: 530px;
   padding-top: 10px;
 }
 
@@ -20,13 +14,16 @@
 }
 
 .blog-item__desc {
+  height: 200px; 
   padding: 0;
   margin: 0;
   margin-bottom: 25px;
+  overflow: hidden;
 }
 
-.blog-item__btn {
-  margin-right: 222px;
+.blog-item__datewrapper {
+  padding: 10px 0;
+  text-align: right;
 }
 
 .blog-item__date {
