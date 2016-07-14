@@ -4,13 +4,20 @@
 
 .reviews-control.left,
 .reviews-control.right {
-  top: -20px;
+  top: 0;
   width: 5%;
-  font-family: Times New Roman;
-  font-size: 70px;
-  line-height: 84px;
-  color: #6c6c6c;
   background-image: none;
+  box-shadow: none;
+  fill: #6c6c6c;
+  
+  &:hover{
+    fill: #fecc00;
+  }
+
+  &:active,
+  &:focus {
+    fill: #edaa29;
+  }
 }
 
 .reviews__item {

@@ -63,6 +63,29 @@ module.exports = function(grunt) {
       }
     },
 
+    svgstore: {
+      options: {
+        svg: {
+          style: "display: none",
+          xmlns: 'http://www.w3.org/2000/svg'
+        }
+      },
+      symbols: {
+        files: {
+          "build/img/symbols.svg": ["build/img/*.svg", "!build/img/logo.svg"]
+        }
+      }
+    },
+
+    svgmin: {
+      symbols: {
+        files: [{
+          expand: true,
+          src: ["build/img/*.svg"]
+        }]
+      }
+    },
+
     clean: {
       build: ["build"]
     },
@@ -122,6 +145,7 @@ module.exports = function(grunt) {
     }
   });
 
+  grunt.registerTask("symbols", ["svgmin", "svgstore"]);
   grunt.registerTask("serve", ["browserSync", "watch"]);
 
   grunt.registerTask("build", [
@@ -131,6 +155,7 @@ module.exports = function(grunt) {
     "postcss",
     "csso",
     "uglify",
+    "symbols",
     "imagemin"
   ]);
 
