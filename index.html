@@ -32,7 +32,26 @@
             </div>
             <div class="collapse navbar-collapse no-gutter" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Послуги</a></li>
+                <li class="active"><a href="#">Послуги</a>
+                  <ul class="nav-dropdown">
+                    <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#">Перукарські послуги</a>
+                      <ul class="nav-submenu">
+                        <li class="nav-submenu__item"><a class="nav-submenu__link" href="#">Cучасні техніки фарбування (фарба виробництва Італії)</a></li>
+                        <li class="nav-submenu__item"><a class="nav-submenu__link" href="#">Процедури відновлення структури волосся</a></li>
+                        <li class="nav-submenu__item"><a class="nav-submenu__link" href="#">Лікування від випадіння волосся, лупи, жирності шкіри голови</a></li>
+                        <li class="nav-submenu__item"><a class="nav-submenu__link" href="#">Кератинове відновлення з ефектом випрямлення (США)</a></li>
+                        <li class="nav-submenu__item"><a class="nav-submenu__link" href="#">Біозавивка</a></li>
+                        <li class="nav-submenu__item"><a class="nav-submenu__link" href="#">Стрижки, укладки, зачіски</a></li>
+                        <li class="nav-submenu__item"><a class="nav-submenu__link" href="#">Якісні засоби для домашнього догляду</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#">Косметологія обличчя та тіла</a></li>
+                    <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#">Корекція природних даних</a></li>
+                    <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#">Нігтьова естетика</a></li>
+                    <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#">Масаж</a></li>
+                    <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#">Солярій</a></li>
+                  </ul>
+                </li> 
                 <li><a href="#">Ціни</a></li>
                 <li><a href="#">Акції</a></li>
                 <li><a href="#">Відгуки</a></li>
@@ -60,48 +79,42 @@
     </div>
   </header>
   <div class="slider">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="slider__block">
-            <div id="promo" class="carousel slide" data-ride="carousel">
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner slider__list" role="listbox">
-                <div class="item active slider__item slider__item--active">
-                  <img class="slider__img" src="img/tmp/slide1.jpg" alt="Slide1">
-                  <div class="slider__text">
-                    <h2 class="slider__maintitle">Салон краси "Батерфляй"</h2>
-                    <h3 class="slider__subtitle">салон позитивних емоцій…</h3>
-                    <div class="slider__btnwrapper">
-                      <a class="slider__btn btn" href="#">Детальніше</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="item slider__item">
-                  <img class="slider__img" src="img/tmp/slide2.jpg" alt="Slide2">
-                  <div class="slider__text">
-                    <h2 class="slider__maintitle">Салон краси "Батерфляй"</h2>
-                    <h3 class="slider__subtitle">салон позитивних емоцій…</h3>
-                    <div class="slider__btnwrapper">
-                      <a class="slider__btn btn" href="#">Детальніше</a>
-                    </div>
-                  </div>
-                </div>
+    <div class="slider__block">
+      <div id="promo" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner slider__list" role="listbox">
+          <div class="item active slider__item slider__item--active">
+            <img class="slider__img" src="img/tmp/slide1.jpg" alt="Slide1">
+            <div class="slider__text">
+              <h2 class="slider__maintitle">Салон краси "Батерфляй"</h2>
+              <h3 class="slider__subtitle">салон позитивних емоцій…</h3>
+              <div class="slider__btnwrapper">
+                <a class="slider__btn btn" href="#">Детальніше</a>
               </div>
-              <!-- Left and right controls -->
-              <a class="left carousel-control slider__control" href="#promo" role="button" data-slide="prev">
-                <svg class="slider__control-left" width="26.31px" height="55.1px">
-                  <use xlink:href="img/symbols.svg#slider-left-arr"></use>
-                </svg>
-              </a>
-              <a class="right carousel-control slider__control" href="#promo" role="button" data-slide="next">
-                <svg class="slider__control-right" width="26.31px" height="55.1px">
-                  <use xlink:href="img/symbols.svg#slider-right-arr"></use>
-                </svg>
-              </a>
+            </div>
+          </div>
+          <div class="item slider__item">
+            <img class="slider__img" src="img/tmp/slide2.jpg" alt="Slide2">
+            <div class="slider__text">
+              <h2 class="slider__maintitle">Салон краси "Батерфляй"</h2>
+              <h3 class="slider__subtitle">салон позитивних емоцій…</h3>
+              <div class="slider__btnwrapper">
+                <a class="slider__btn btn" href="#">Детальніше</a>
+              </div>
             </div>
           </div>
         </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control slider__control" href="#promo" role="button" data-slide="prev">
+          <svg class="slider__control-left" width="26.31px" height="55.1px">
+            <use xlink:href="img/symbols.svg#slider-left-arr"></use>
+          </svg>
+        </a>
+        <a class="right carousel-control slider__control" href="#promo" role="button" data-slide="next">
+          <svg class="slider__control-right" width="26.31px" height="55.1px">
+            <use xlink:href="img/symbols.svg#slider-right-arr"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
