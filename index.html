@@ -10,18 +10,18 @@
   <header class="main-header">
     <div class="container">
       <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <div class="col-sm-5 col-xs-12">
           <div class="logo">
             <a class="logo__link" href="index.html">
               <picture>
                 <source media="(max-width: 320px)" srcset="img/logo-mobile.png">
                 <source media="(max-width: 768px)" srcset="img/logo.svg">
-                <img src="img/logo.svg" srcset="img/logo.svg" alt="Butterfly" width="399px" height="111px">
+                <img src="img/logo.svg" srcset="img/logo.svg" alt="Butterfly" width="399" height="111">
               </picture>
             </a>
           </div>
         </div>
-        <div class="col-lg-6 no-gutter">
+        <div class="col-lg-6">
           <nav class="navbar navbar-default">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -41,25 +41,18 @@
             </div>
           </nav>
         </div>
-        <div class="col-lg-1 no-gutter">
+        <div class="col-lg-1">
           <div class="user-menu">
-            <div class="user-menu__burgerbtn">
-              <a class="user-menu__burgerlink" href="#">
-                <svg class="user-menu__burgerimg" width="24px" height="20px">
-                  <use xlink:href="img/symbols.svg#burgerbtn"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="user-menu__lang">
-            <div class="btn-group">
-              <button type="button" class="dropdown-toggle user-menu__toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">UA <span class="caret user-menu__caret"></span>
-              </button>
-              <ul class="dropdown-menu user-menu__dropdown-menu">
-                <li class="user-menu__dropdown-item">
-                  <a class="user-menu__dropdown-link" href="#">RU</a>
-                </li>
-              </ul>
+            <div class="user-menu__lang">
+              <div class="btn-group">
+                <button type="button" class="dropdown-toggle user-menu__toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">UA <span class="caret user-menu__caret"></span>
+                </button>
+                <ul class="dropdown-menu user-menu__dropdown-menu">
+                  <li class="user-menu__dropdown-item">
+                    <a class="user-menu__dropdown-link" href="#">RU</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -67,9 +60,9 @@
     </div>
   </header>
   <div class="slider">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-12 no-gutter">
+        <div class="col-lg-12">
           <div class="slider__block">
             <div id="promo" class="carousel slide" data-ride="carousel">
               <!-- Wrapper for slides -->
@@ -115,7 +108,7 @@
   <section class="action">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-10 col-lg-offset-1">
           <div class="action-block">
             <img class="action-block__img" src="img/tmp/action1.png" alt="Святкова зачіска">
             <div class="action-block__info">
@@ -124,6 +117,7 @@
               <p class="action-block__text">Змінюється з часом асортимент послуг, їх вартість, марка продукції, однак незмінними залишаються кілька речей: бачення краси, прагнення до досконалості, любов до справи, повага до клієнта (незалежно від віку та статусу), щирість, відкритість та позитивне мислення працівників.</p>
               <a class="action-block__btn btn" href="#">Записатися</a>
               <span class="action-block__deadline">Акція триває до <b class="action-block__date">20 квітня</b></span>
+              <div class="action-block__discount">-50%</div>
             </div>
           </div>
         </div>
@@ -131,9 +125,15 @@
     </div>
   </section>
   <section class="services">
-    <h2 class="services__title">Послуги</h2>
-    <h3 class="services__subtitle">сучасні техніки, процедури відновлення та лікування</h3>
     <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="services__header">
+            <h2 class="services__title">Послуги</h2>
+            <h3 class="services__subtitle">сучасні техніки, процедури відновлення та лікування</h3>
+          </div> 
+        </div>
+      </div>
       <div class="row">
         <div class="col-lg-4">
           <div class="service-item">
@@ -177,8 +177,6 @@
             </ul>
           </div>
         </div>
-      </div>
-      <div class="row">
         <div class="col-lg-4">
           <div class="service-item">
             <svg class="service-item__icon" width="48px" height="63px">
@@ -217,8 +215,8 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="services__cta">
+      <div class="services__cta">
+        <div class="row">
           <div class="col-lg-6">
             <p class="services__text">Заповніть форму та запишіться на прийом до наших 
   спеціалістів у зручний для Вас час</p>
@@ -238,39 +236,57 @@
       <div class="row">
         <div class="col-lg-9">
           <div class="blog-item">
-            <img class="blog-item__img" src="img/tmp/blog1.jpg" alt="Ламинирование волос: что нужно знать">
-            <div class="blog-item__info">
-              <h3 class="blog-item__title">Ламинирование волос: что нужно знать</h3>
-              <p class="blog-item__desc">Ламинирование — это полуперманентное (то есть очень поверхностное) окрашивание волос прозрачным или цветным составом. По сути это безаммиачный краситель, который не нужно смешивать с оксидантом. В Paul Mitchell он имеет протеиновую основу, благодаря чему воздухопроницаем и гипоаллергенен. Сам термин «ламинирование» был придуман экспертами лаборатории Paul Mitchell в 2003 году. По сути это безаммиачный краситель, который не нужно смешивать с оксидантом. В Paul Mitchell он имеет протеиновую основу, благодаря чему воздухопроницаем и гипоаллергенен. Сам термин «ламинирование» был придуман экспертами лаборатории Paul Mitchell в 2003 году.</p>
-              <a class="blog-item__btn btn btn-primary" href="#">Детальніше</a>
-              <time class="blog-item__date" datetime="2016-04-04">04 квітня 2016 р.</time>
+            <div class="row">
+              <div class="col-lg-5">
+                <img class="blog-item__img" src="img/tmp/blog1.jpg" alt="Ламинирование волос: что нужно знать">
+              </div>
+              <div class="col-lg-7">
+                <div class="blog-item__info">
+                  <h3 class="blog-item__title">Ламинирование волос: что нужно знать</h3>
+                  <p class="blog-item__desc">Ламинирование — это полуперманентное (то есть очень поверхностное) окрашивание волос прозрачным или цветным составом. По сути это безаммиачный краситель, который не нужно смешивать с оксидантом. В Paul Mitchell он имеет протеиновую основу, благодаря чему воздухопроницаем и гипоаллергенен. Сам термин «ламинирование» был придуман экспертами лаборатории Paul Mitchell в 2003 году. По сути это безаммиачный краситель, который не нужно смешивать с оксидантом. В Paul Mitchell он имеет протеиновую основу, благодаря чему воздухопроницаем и гипоаллергенен. Сам термин «ламинирование» был придуман экспертами лаборатории Paul Mitchell в 2003 году.</p>
+                  <div class="row">
+                    <div class="col-lg-7">
+                      <a class="blog-item__btn btn btn-primary" href="#">Детальніше</a>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="blog-item__datewrapper">
+                        <time class="blog-item__date" datetime="2016-04-04">04 квітня 2016 р.</time>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="blog-categories">
-            <h3 class="blog-categories__title">Інші статті блога</h3>
-            <ul class="blog-categories__list">
-              <li class="blog-categories__item">
-                <a class="blog-categories__link" href="#">Обличчя</a>
-              </li>
-              <li class="blog-categories__item">
-                <a class="blog-categories__link" href="#">Тіло</a>
-              </li>
-              <li class="blog-categories__item">
-                <a class="blog-categories__link" href="#">Макіяж</a>
-              </li>
-              <li class="blog-categories__item">
-                <a class="blog-categories__link" href="#">Волоси</a>
-              </li>
-              <li class="blog-categories__item">
-                <a class="blog-categories__link" href="#">Нігті</a>
-              </li>
-              <li class="blog-categories__item">
-                <a class="blog-categories__link" href="#">Аромати</a>
-              </li>
-            </ul>
-            <a class="blog-categories__link blog-categories__link--all" href="#">Всі статті</a>
+          <div class="row">
+            <div class="col-lg-11 col-lg-offset-1">
+              <div class="blog-categories">
+                <h3 class="blog-categories__title">Інші статті блога</h3>
+                <ul class="blog-categories__list">
+                  <li class="blog-categories__item">
+                    <a class="blog-categories__link" href="#">Обличчя</a>
+                  </li>
+                  <li class="blog-categories__item">
+                    <a class="blog-categories__link" href="#">Тіло</a>
+                  </li>
+                  <li class="blog-categories__item">
+                    <a class="blog-categories__link" href="#">Макіяж</a>
+                  </li>
+                  <li class="blog-categories__item">
+                    <a class="blog-categories__link" href="#">Волоси</a>
+                  </li>
+                  <li class="blog-categories__item">
+                    <a class="blog-categories__link" href="#">Нігті</a>
+                  </li>
+                  <li class="blog-categories__item">
+                    <a class="blog-categories__link" href="#">Аромати</a>
+                  </li>
+                </ul>
+                <a class="blog-categories__link blog-categories__link--all" href="#">Всі статті</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -343,7 +359,7 @@
         <div class="col-lg-4">
           <div class="main-footer__author">
             <span class="main-footer__author-title">Створення сайту</span>
-            <a class="main-footer__author-name" href="#">WEB-STUDIO WEDES</a>
+            <a class="main-footer__author-name" target="_blank" title="Web-studio WEDES" href="http://www.wedes-art.com">WEB-STUDIO WEDES</a>
           </div>
         </div>
       </div>
