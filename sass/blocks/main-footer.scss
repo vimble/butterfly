@@ -8,6 +8,20 @@
   text-align: center;
 }
 
+.main-footer__icon {
+  margin-right: 22px;
+  fill: #6c6c6c;
+
+  &:hover {
+    fill: #fecc00;
+  }
+
+  &:active,
+  &:focus {
+    fill: #edaa29;
+  }
+}
+
 .main-footer__author {
   position: relative;
   float: right;

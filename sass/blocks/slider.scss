@@ -38,18 +38,31 @@
 }
 
 .slider__control {
-  top: 36%;
-  left: 13px;
+  top: 35%;
+  left: 0;
   display: block;
   width: 26px;
   height: 57px;
-  padding: 0 20px;
+  padding: 0 12px;
+  fill: #6c6c6c;
+  
+  &:hover{
+    fill: #fecc00;
+  }
+
+  &:active,
+  &:focus {
+    fill: #edaa29;
+  }
 }
 
-.slider__control.left {
-  background: url("../img/left-arrow.png") no-repeat;
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+  box-shadow: none;
+  opacity: 1;
 }
 
-.slider__control.right {
-  background: url("../img/right-arrow.png") no-repeat;
+.carousel-control.right {
+  right: 25px;
 }
