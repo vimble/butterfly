@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <nav class="navbar navbar-default">
+          <nav class="navbar navbar-default" role="navigation">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="icon-bar"></span>
@@ -32,26 +32,7 @@
             </div>
             <div class="collapse navbar-collapse no-gutter" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Послуги</a>
-                  <ul class="nav-dropdown">
-                    <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#">Перукарські послуги</a>
-                      <ul class="nav-submenu">
-                        <li class="nav-submenu__item"><a class="nav-submenu__link" href="#">Cучасні техніки фарбування (фарба виробництва Італії)</a></li>
-                        <li class="nav-submenu__item"><a class="nav-submenu__link" href="#">Процедури відновлення структури волосся</a></li>
-                        <li class="nav-submenu__item"><a class="nav-submenu__link" href="#">Лікування від випадіння волосся, лупи, жирності шкіри голови</a></li>
-                        <li class="nav-submenu__item"><a class="nav-submenu__link" href="#">Кератинове відновлення з ефектом випрямлення (США)</a></li>
-                        <li class="nav-submenu__item"><a class="nav-submenu__link" href="#">Біозавивка</a></li>
-                        <li class="nav-submenu__item"><a class="nav-submenu__link" href="#">Стрижки, укладки, зачіски</a></li>
-                        <li class="nav-submenu__item"><a class="nav-submenu__link" href="#">Якісні засоби для домашнього догляду</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#">Косметологія обличчя та тіла</a></li>
-                    <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#">Корекція природних даних</a></li>
-                    <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#">Нігтьова естетика</a></li>
-                    <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#">Масаж</a></li>
-                    <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#">Солярій</a></li>
-                  </ul>
-                </li> 
+                <li class="active"><a href="#" id="serviceMenu">Послуги</a></li>
                 <li><a href="#">Ціни</a></li>
                 <li><a href="#">Акції</a></li>
                 <li><a href="#">Відгуки</a></li>
@@ -69,6 +50,61 @@
                 <ul class="dropdown-menu user-menu__dropdown-menu">
                   <li class="user-menu__dropdown-item">
                     <a class="user-menu__dropdown-link" href="#">RU</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-level-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <ul class="menu-level-2__list">
+                <li class="menu-level-2__item">
+                  <a class="menu-level-2__link" href="#">Перукарські послуги</a>
+                </li>
+                <li class="menu-level-2__item">
+                  <a class="menu-level-2__link" href="#">Косметологія обличчя та тіла</a>
+                </li>
+                <li class="menu-level-2__item">
+                  <a class="menu-level-2__link" href="#">Корекція природних даних</a>
+                </li>
+                <li class="menu-level-2__item">
+                  <a class="menu-level-2__link" href="#">Нігтьова естетика</a>
+                </li>
+                <li class="menu-level-2__item">
+                  <a class="menu-level-2__link" href="#">Масаж</a>
+                </li>
+                <li class="menu-level-2__item">
+                  <a class="menu-level-2__link" href="#">Солярій</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-8">
+              <div class="menu-level-3">
+                <ul class="menu-level-3__list">
+                  <li class="menu-level-3__item">
+                    <a class="menu-level-3__link" href="#">Cучасні техніки фарбування (фарба виробництва Італії)</a>
+                  </li>
+                  <li class="menu-level-3__item">
+                    <a class="menu-level-3__link" href="#">Процедури відновлення структури волосся</a>
+                  </li>
+                  <li class="menu-level-3__item">
+                    <a class="menu-level-3__link" href="#">Лікування від випадіння волосся, лупи, жирності шкіри голови</a>
+                  </li>
+                  <li class="menu-level-3__item">
+                    <a class="menu-level-3__link" href="#">Кератинове відновлення з ефектом випрямлення (США)</a>
+                  </li>
+                  <li class="menu-level-3__item">
+                    <a class="menu-level-3__link" href="#">Біозавивка</a>
+                  </li>
+                  <li class="menu-level-3__item">
+                    <a class="menu-level-3__link" href="#">Стрижки, укладки, зачіски</a>
+                  </li>
+                  <li class="menu-level-3__item">
+                    <a class="menu-level-3__link" href="#">Якісні засоби для домашнього догляду</a>
                   </li>
                 </ul>
               </div>
@@ -144,7 +180,7 @@
           <div class="services__header">
             <h2 class="services__title">Послуги</h2>
             <h3 class="services__subtitle">сучасні техніки, процедури відновлення та лікування</h3>
-          </div> 
+          </div>
         </div>
       </div>
       <div class="row">
@@ -210,7 +246,7 @@
             </svg>
             <h4 class="service-item__name">Масаж</h4>
             <ul class="service-item__list">
-              <li class="service_item__listitem">ручний  класичний, 
+              <li class="service_item__listitem">ручний  класичний,
      антицелюлітний, релаксуючий, медовий</li>
               <li class="service_item__listitem">папаратний  антицелюлітний</li>
             </ul>
@@ -231,7 +267,7 @@
       <div class="services__cta">
         <div class="row">
           <div class="col-lg-6">
-            <p class="services__text">Заповніть форму та запишіться на прийом до наших 
+            <p class="services__text">Заповніть форму та запишіться на прийом до наших
   спеціалістів у зручний для Вас час</p>
           </div>
           <div class="col-lg-6">
@@ -240,7 +276,7 @@
             </div>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
   </section>
   <section class="blog">
@@ -380,5 +416,6 @@
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
 </body>
 </html>
